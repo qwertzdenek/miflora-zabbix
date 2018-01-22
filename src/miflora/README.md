@@ -1,0 +1,1 @@
+see https://github.com/open-homeautomation/miflora for more info
