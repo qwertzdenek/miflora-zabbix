@@ -1,0 +1,11 @@
+[Unit]
+Description=Xiaomi Mi Plant service
+After=bluetooth.service
+
+[Service]
+Type=oneshot
+User=miflora
+ExecStart=/usr/bin/python3 /var/lib/miflora/ble_flower-mariadb/read_values.py --load C4:7C:8D:60:E7:38
+
+[Install]
+WantedBy=multi-user.target
